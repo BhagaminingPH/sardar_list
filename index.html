@@ -161,7 +161,23 @@
                     </tr>
 
 
-
+                    <!-- Password Popup HTML -->
+                    <div class="modal-overlay" id="passwordModal">
+                        <div class="modal-box">
+                            <h3>Enter Password 🔐</h3>
+                            <input type="password" id="cardPassword" placeholder="Password" />
+                            <div class="error-msg" id="errorMsg">
+                                Incorrect password! Please try again. or Contact Prakash from the
+                                Mining branch .
+                            </div>
+                            <div class="modal-buttons">
+                                <button class="modal-btn btn-submit" id="submitPassBtn">OK</button>
+                                <button class="modal-btn btn-cancel" id="cancelPassBtn">
+                                    cancel
+                                </button>
+                            </div>
+                        </div>
+                    </div>
 
 
 
@@ -171,23 +187,7 @@
             </table>
         </div>
     </div>
-      <!-- Password Popup HTML -->
-<div class="modal-overlay" id="passwordModal">
-    <div class="modal-box">
-        <h3>Enter Password 🔐</h3>
-        <input type="password" id="cardPassword" placeholder="Password" />
-        <div class="error-msg" id="errorMsg">
-            Incorrect password! Please try again. or Contact Prakash from the
-            Mining branch .
-        </div>
-        <div class="modal-buttons">
-            <button class="modal-btn btn-submit" id="submitPassBtn">OK</button>
-            <button class="modal-btn btn-cancel" id="cancelPassBtn">
-                cancel
-            </button>
-        </div>
-    </div>
-</div>
+      
 </div>
 
 
@@ -197,7 +197,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
-  <script type="module" src="{{ url_for('static', filename='js/main.js')}}"></script>
+  <script type="module" src="comman.main.js"></script>
 </body>
 
 </html>
